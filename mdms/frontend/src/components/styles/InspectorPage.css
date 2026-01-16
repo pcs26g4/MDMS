@@ -1,0 +1,52 @@
+.inspector-container {
+  padding: 24px;
+  max-width: 1100px;
+  margin: auto;
+  color: #f8fafc;
+}
+
+.inspector-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.inspector-tabs {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.inspector-tabs button {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: rgba(15, 23, 42, 0.9);
+  color: white;
+}
+
+.assign-time {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.assign-time input {
+  width: 90px;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+.assign-time button {
+  padding: 8px 14px;
+  background: #22c55e;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.empty-text {
+  color: #9ca3af;
+}

@@ -1,0 +1,258 @@
+/* ===============================
+   ADMIN LAYOUT WRAPPER
+================================ */
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+}
+
+/* ===============================
+   SIDEBAR
+================================ */
+.admin-sidebar {
+  position: fixed;
+  top: 0;
+  left: -270px;
+  width: 270px;
+  height: 100%;
+  background: #0f172a;
+  padding: 24px 18px;
+  color: #ffffff;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.admin-sidebar.open {
+  left: 0;
+}
+
+.sidebar-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #e0f2fe;
+}
+
+.admin-sidebar button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #cbd5f5;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  text-align: left;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.admin-sidebar button:hover {
+  background: #1e293b;
+  color: #fff;
+}
+
+/* ===============================
+   SIDEBAR OVERLAY
+================================ */
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  z-index: 999;
+}
+
+/* ===============================
+   MAIN CONTENT AREA
+================================ */
+.admin-main {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===============================
+   TOP BAR
+================================ */
+.admin-topbar {
+  height: 60px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  color: white;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.menu-btn {
+  background: transparent;
+  color: white;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Logout Button */
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  padding: 7px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+/* ===============================
+   CONTENT SPACING
+================================ */
+.admin-container {
+  padding: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   SECTION TITLE
+================================ */
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #0f172a;
+}
+
+/* ===============================
+   EMPTY TEXT
+================================ */
+.empty-text {
+  font-size: 15px;
+  color: #64748b;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* ===============================
+   CARD CONTAINER
+================================ */
+.admin-card {
+  background: white;
+  padding: 20px 24px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  transition: transform 0.2s ease;
+}
+
+.admin-card:hover {
+  transform: translateY(-2px);
+}
+
+.admin-card h3 {
+  margin-bottom: 15px;
+  color: #0f172a;
+  font-size: 18px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+/* ===============================
+   LIST ITEM
+================================ */
+.admin-list-item {
+  background: #f8fafc;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-list-item:hover {
+  background: #f1f5f9;
+}
+
+.admin-user-email {
+  font-size: 14px;
+  color: #475569;
+}
+
+/* Left column */
+.item-left {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Right column */
+.item-right {
+  display: flex;
+  gap: 10px;
+}
+
+/* ===============================
+   STATUS BADGES
+================================ */
+.status {
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.status.pending {
+  background: #facc15;
+  color: #7a5800;
+}
+
+.status.approved {
+  background: #4ade80;
+  color: #065f46;
+}
+
+/* ===============================
+   ACTION BUTTONS
+================================ */
+.approve-btn {
+  background: #22c55e;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.approve-btn:hover {
+  background: #16a34a;
+}
+
+.reject-btn {
+  background: #ef4444;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.reject-btn:hover {
+  background: #dc2626;
+}
+
+/* Timestamp */
+.time {
+  font-size: 13px;
+  color: #475569;
+}
